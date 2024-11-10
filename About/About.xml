@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Belhuns Learning - Plague Gun</name>
+  <author>Belhun</author>
+  <packageId>belhun.PlagueGun</packageId>
+  <description>V1.0
+    This mod adds a plague gun, a weapon that has a chance to give your enemies the plague. This is a Test mod for me to make sure i know the basic's of modding Rimworld.
+    https://ludeon.com/forums/index.php?topic=33219.msg338629#msg338629 if you are intrested in learning too
+		</description>
+  <supportedVersions>
+    <li>1.5</li>
+  </supportedVersions>
+</ModMetaData>

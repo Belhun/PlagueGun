@@ -5,7 +5,7 @@
     <defName>BLPG_Bullet_Revolver</defName>
     <label>Plague Gun</label>
 	<modExtensions>
-		<li Class="Plague.ModExtension_PlagueBullet">
+		<li Class="WTFPlague.ModExtension_PlagueBullet">
 			<addHediffChance>0.05</addHediffChance>
 			<hediffToAdd>Plague</hediffToAdd>
 		</li>

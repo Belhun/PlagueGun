@@ -1,7 +1,7 @@
 ﻿using Verse;
 using RimWorld;
 
-namespace Plague
+namespace WTFPlague
 {   
     public class ModExtension_PlagueBullet : DefModExtension
     {

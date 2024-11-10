@@ -7,8 +7,8 @@
     <ProjectGuid>{148718DA-4A30-4451-A40C-83B1C17D0B0F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Plague</RootNamespace>
-    <AssemblyName>Plague</AssemblyName>
+    <RootNamespace>WTFPlague</RootNamespace>
+    <AssemblyName>WTFPlague</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

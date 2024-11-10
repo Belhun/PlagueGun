@@ -2,3 +2,4 @@ D:\SteamLibrary\steamapps\common\RimWorld\Mods\PlagueGun\Source\Plague\obj\Debug
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\PlagueGun\Source\Plague\obj\Debug\Plague.csproj.CoreCompileInputs.cache
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\PlagueGun\1.5\Assembly\WTFPlague.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\PlagueGun\Source\Plague\obj\Debug\WTFPlague.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\PlagueGun\1.5\Assemblies\WTFPlague.dll

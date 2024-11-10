@@ -8,7 +8,7 @@ namespace WTFPlague
     {
         static LoadingTest()
         {
-            Log.Message("Assembly successfully loaded");
+            Log.Message("WTFPlague Assembly successfully loaded");
         }
     }
     public class ModExtension_PlagueBullet : DefModExtension

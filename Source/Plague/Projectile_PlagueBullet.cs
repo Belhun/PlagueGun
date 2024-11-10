@@ -1,15 +1,15 @@
 ﻿using Verse;
 using RimWorld;
 
-namespace TST_PlagueGun
-{
-    public class ModExtension_PlagueBullet : DefModExtension
+namespace Plague
+{   public class ModExtension_PlagueBullet : DefModExtension
     {
-        public float addHediffChance = 0.05f;
+        public float addHediffChance;
         public HediffDef hediffToAdd;
     }
     public class Projectile_PlagueBullet : Bullet
     {
+        
         public ModExtension_PlagueBullet Props => base.def.GetModExtension<ModExtension_PlagueBullet>();
 
         protected override void Impact(Thing hitThing, bool blockedByShield = false)
@@ -35,6 +35,10 @@ namespace TST_PlagueGun
                         hediff.Severity = randomSeverity;
                         hitPawn.health.AddHediff(hediff);
                     }
+                }
+                else
+                {
+                    MoteMaker.ThrowText(hitThing.PositionHeld.ToVector3(), hitThing.MapHeld, "TST_PlagueBullet_FailureMote".Translate(Props.addHediffChance), 12f);
                 }
             }
         }

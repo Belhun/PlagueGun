@@ -1,37 +1,37 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  
   <ThingDef ParentName="BaseBullet">
-    <defName>TST_Bullet_PlagueGun</defName>
-    <label>plague bullet</label>
+    <defName>BLPG_Bullet_Revolver</defName>
+    <label>Plague Gun</label>
+	<modExtensions>
+		<li Class="Plague.ModExtension_PlagueBullet">
+			<addHediffChance>0.05</addHediffChance>
+			<hediffToAdd>Plague</hediffToAdd>
+		</li>
+	</modExtensions>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>12</damageAmountBase>
-      <stoppingPower>1</stoppingPower>
+      <damageAmountBase>9</damageAmountBase>
+      <stoppingPower>0</stoppingPower>
       <speed>55</speed>
     </projectile>
-    <modExtensions>
-    <li Class="TST_PlagueGun.ModExtension_PlagueBullet">
-        <addHediffChance>0.05</addHediffChance>
-        <hediffToAdd>Plague</hediffToAdd>
-    </li>
-</modExtensions>
   </ThingDef>
-
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>TST_Gun_PlagueGun</defName>
-    <label>plague gun</label>
-    <description>A curious weapon notable for its horrible health effects.</description>
+    <defName>BLPG_Gun_PlagueGun</defName>
+    <label>Plague Gun</label>
+    <description>You Smell bad Shit and smell like farts, what ever this is, its not helthy</description>
+    <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Revolver</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
       <WorkToMake>4000</WorkToMake>
       <Mass>1.4</Mass>
@@ -56,12 +56,13 @@
       <skillRequirements>
         <Crafting>3</Crafting>
       </skillRequirements>
+      <displayPriority>400</displayPriority>
     </recipeMaker>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>TST_Bullet_PlagueGun</defaultProjectile>
+        <defaultProjectile>BLPG_Bullet_Revolver</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>Shot_Revolver</soundCast>
@@ -84,9 +85,11 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>5</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
   </ThingDef>
+
+
 </Defs>

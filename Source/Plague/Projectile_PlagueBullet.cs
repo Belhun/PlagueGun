@@ -2,7 +2,15 @@
 using RimWorld;
 
 namespace WTFPlague
-{   
+{
+    [StaticConstructorOnStartup]
+    public static class LoadingTest
+    {
+        static LoadingTest()
+        {
+            Log.Message("Assembly successfully loaded");
+        }
+    }
     public class ModExtension_PlagueBullet : DefModExtension
     {
         public float addHediffChance;
@@ -10,7 +18,6 @@ namespace WTFPlague
     }
     public class Projectile_PlagueBullet : Bullet
     {
-        
         public ModExtension_PlagueBullet Props => base.def.GetModExtension<ModExtension_PlagueBullet>();
 
         protected override void Impact(Thing hitThing, bool blockedByShield = false)

@@ -2,7 +2,8 @@
 using RimWorld;
 
 namespace Plague
-{   public class ModExtension_PlagueBullet : DefModExtension
+{   
+    public class ModExtension_PlagueBullet : DefModExtension
     {
         public float addHediffChance;
         public HediffDef hediffToAdd;
